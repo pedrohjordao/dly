@@ -20,9 +20,9 @@
 
       in rec {
         packages = {
-          # replace hello-world with your package name
-          hello-world = (rustPkgs.workspace.hello-world {}).bin;
-          default = packages.hello-world;
+          # replace dly with your package name
+          dly = (rustPkgs.workspace.dly {}).bin;
+          default = packages.dly;
         };
       }
     );
